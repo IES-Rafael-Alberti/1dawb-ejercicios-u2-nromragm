@@ -2,7 +2,7 @@ def validar_password(contraseña_usuario):
 
     contraseña = "contraseña"
 
-    if contraseña.lower() == contraseña_usuario.lower():
+    if contraseña == contraseña_usuario.lower():
         return True
     else:
         return False
