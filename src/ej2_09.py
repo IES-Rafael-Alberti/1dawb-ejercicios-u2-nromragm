@@ -1,3 +1,19 @@
+def pedir_edad():
+
+    salir = False
+    while not salir:
+        entrada = input("Introduzca su edad: ")
+
+        if entrada.isnumeric() and 0 < int(entrada):
+            salir = True
+        else:
+            print("La edad introducida no valida.")
+    
+    edad = int(entrada)
+
+    return edad
+
+
 def comprobar_edad(edad):
 
     if edad < 4:
@@ -14,7 +30,7 @@ def comprobar_edad(edad):
 
 def main():
 
-    edad = int(input("Ingrese su edad: "))
+    edad = pedir_edad()
 
     resultado = comprobar_edad(edad)
 
