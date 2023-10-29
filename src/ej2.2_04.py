@@ -15,21 +15,23 @@ def pedir_numero():
     return numero
 
 
-def numeros_impares(numero):
-    print(f"Numeros impares hasta {numero}:", end=" ")
-
-    for i in range (1, numero + 1, 2):
-        if i != 1:
-            print(", ", end="")
+def cuenta_atras(numero):
+    print(f"Cuenta atras hasta 0 desde {numero}:", end=" ")
+    
+    while numero >= 0:
+        if numero != 0:
+            print(numero, end=", ")
         
-        print(i, end=".")    
+        else:
+            print(numero, end=".")
+        numero -= 1  
     
 
 def main():
     
     numero = pedir_numero()
     
-    numeros_impares(numero)
+    cuenta_atras(numero)
 
 
 if __name__ == "__main__":
