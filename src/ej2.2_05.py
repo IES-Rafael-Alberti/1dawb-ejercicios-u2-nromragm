@@ -19,11 +19,9 @@ def capital_obtenido(cantidad, interes, años):
     for años in range(1, años + 1):
         cantidad *= 1 + interes / 100
 
-        print(f"Año {años}: Capital obtenido = {cantidad:.2f}")
+        print(f"Año {años}: Capital obtenido = {cantidad:.2f}€")
 
-
-    
-
+ 
 def main():
     
     cantidad, interes, años = pedir_cantidad_interes_años()
