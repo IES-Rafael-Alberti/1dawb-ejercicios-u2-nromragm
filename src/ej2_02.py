@@ -1,3 +1,9 @@
+def pedir_password():
+    contraseña_usuario = input("Ingresa la contraseña: ")
+    
+    return contraseña_usuario
+
+
 def validar_password(contraseña_usuario):
 
     contraseña = "contraseña"
@@ -10,8 +16,7 @@ def validar_password(contraseña_usuario):
 
 
 def main():
-    
-    contraseña_usuario = input("Ingresa la contraseña: ")
+    contraseña_usuario = pedir_password()
     
     if validar_password(contraseña_usuario):
         print("La contraseña es correcta.") 
