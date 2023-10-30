@@ -1,18 +1,4 @@
-def pedir_numero():
-
-    salir = False
-    while not salir:
-        entrada = int(input("Introduze un numero entero positivo: "))
-
-        if entrada > 0:
-            salir = True
-        
-        else:
-            print("El numero introducido no es valido.")
-    
-    numero = int(entrada)
-
-    return numero
+from ej22_03 import pedir_numero
 
 
 def cuenta_atras(numero):
