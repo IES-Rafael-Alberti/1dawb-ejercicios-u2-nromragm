@@ -1,9 +1,4 @@
-def pedir_numero():
-    
-    numero = int(input("Introduce un numero entero o 0 para terminar: "))
-    
-    return numero
-
+from ej22_14 import pedir_numero
 
 def main():
     

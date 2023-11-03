@@ -3,11 +3,15 @@ def tabla_de_multiplicar(numero):
         resultado = numero * i
         print(f"{numero} x {i} = {resultado}")
 
+
 def mostrar_tabla():
     for i in range(1, 10 + 1):
         print(f"Tabla del {i}:")
+        print("")
         tabla_de_multiplicar(i)
         print("")
+        print("")
+
 
 def main():
     print("Tabla de multiplicar del 1 al 10:")
