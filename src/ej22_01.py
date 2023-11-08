@@ -5,15 +5,16 @@ def pedir_palabra():
     
 
 def palabra_10_veces(palabra):
+    resultado = ""
     for i in range (10):
-        resultado = print(palabra)
-        return resultado
+        resultado += palabra + "\n"
+    return resultado
 
 def main():
 
     palabra = pedir_palabra()
 
-    palabra_10_veces(palabra)
+    print(palabra_10_veces(palabra))
 
 
 

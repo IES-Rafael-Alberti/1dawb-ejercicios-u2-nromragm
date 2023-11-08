@@ -2,22 +2,24 @@ from ej22_03 import pedir_numero
 
 
 def cuenta_atras(numero):
+    resultado = ""
     print(f"Cuenta atras hasta 0 desde {numero}:", end=" ")
-    
-    while numero >= 0:
+    while int(numero) > 0:
         if numero != 0:
             print(numero, end=", ")
-        
-        else:
-            print(numero, end=".")
+
         numero -= 1  
     
+    resultado = str(numero) + "."
+    
+    return resultado
+
 
 def main():
     
     numero = pedir_numero()
     
-    cuenta_atras(numero)
+    print(cuenta_atras(numero))
 
 
 if __name__ == "__main__":

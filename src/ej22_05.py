@@ -16,10 +16,11 @@ def pedir_cantidad_interes_años():
 
 
 def capital_obtenido(cantidad, interes, años):
+    resultado = ""
     for años in range(1, años + 1):
         cantidad *= 1 + interes / 100
 
-        resultado = print(f"Año {años}: Capital obtenido = {cantidad:.2f}€")
+        resultado += f"Año {años}: Capital obtenido = {cantidad:.2f}€\n"
     
     return resultado
  
@@ -27,7 +28,7 @@ def main():
     
     cantidad, interes, años = pedir_cantidad_interes_años()
     
-    capital_obtenido(cantidad, interes, años)
+    print(capital_obtenido(cantidad, interes, años))
 
 
 if __name__ == "__main__":
