@@ -6,7 +6,8 @@ def pedir_numero():
             return numero
         
         if numero < 0:
-            print("ERROR Ingresa un numero positivo.")
+            resultado = "ERROR Ingresa un numero positivo."
+            return resultado
 
 
 def par_impar(numero):

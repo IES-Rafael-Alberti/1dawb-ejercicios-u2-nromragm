@@ -1,8 +1,12 @@
 def comenzar_programa():
-    print("El programa ha comenzado.")
+    resultado = "El programa ha comenzado."
+
+    return resultado
 
 def imprimir_listado():
-    print("Lista de elementos:")
+    resultado = "Lista de elementos: Agua, Pan"
+
+    return resultado
 
 
 def main():
@@ -16,9 +20,9 @@ def main():
         opcion = input("Seleccione una opcion (1, 2 o 3): ")
         
         if opcion == "1":
-            comenzar_programa()
+            print(comenzar_programa())
         elif opcion == "2":
-            imprimir_listado()
+            print(imprimir_listado())
         elif opcion == "3":
             print("Programa finalizado.")
             salir = True

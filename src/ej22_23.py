@@ -1,4 +1,5 @@
 def titulo_libro():
+    resultado = ""
     lista = ""
     titulo = ""
     linea = 0
@@ -15,11 +16,13 @@ def titulo_libro():
 
         else:
             lista += titulo
-    print(f"Fin. Se leyeron {linea} líneas completas.")
+    resultado += f"Fin. Se leyeron {linea} líneas completas."
+
+    return resultado
 
 
 def main():
-    titulo_libro()
+    print(titulo_libro())
     
 
 if __name__ == "__main__":

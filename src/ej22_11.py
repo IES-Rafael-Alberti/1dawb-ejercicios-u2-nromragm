@@ -7,17 +7,17 @@ def pedir_palabra():
 def invertir_palabra(palabra):
 
     palabra_invertida = palabra[::-1]
-
+    resultado = ""
     for letra in palabra_invertida:
-        print(letra)
+        resultado += letra
     
-    return letra
+    return resultado
 
 def main():
 
     palabra = pedir_palabra()
 
-    invertir_palabra(palabra)
+    print(invertir_palabra(palabra))
 
 
 
